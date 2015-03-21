@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Site Review Form | Storm Cloud</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="ClaPat Studio">
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>    
+	<link rel="icon" type="image/ico" href="favicon.ico" />
+	
+<style>
+	
+	
+html {
+  background: url('img/lined_paper.png');
+}
+ 
+.50centwrapper {
+  color: #090;
+  width: 800px;
+  margin: 50px auto; 
+  font-family: Courier New, Courier, monospace;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 16px;
+   -webkit-font-smoothing: antialiased;
+}
+ 
+div.cursor {
+  display: inline-block;
+  background: #111;
+  margin-left: 1px;
+ 
+  -webkit-animation: blink 2s linear 0s infinite;
+  -moz-animation: blink 2s linear 0s infinite;
+  -ms-animation: blink 2s linear 0s infinite;
+  -o-animation: blink 2s linear 0s infinite;
+}
+@-webkit-keyframes blink {
+  0%   { background: #0a0 }
+  47%  { background: #090 }
+  50%  { background: #000 }
+  97%  { background: #000 }
+  100% { background: #090 }
+}
+ 
+@-moz-keyframes blink {
+  0%   { background: #0a0 }
+  47%  { background: #090 }
+  50%  { background: #000 }
+  97%  { background: #000 }
+  100% { background: #090 }
+}
+ 
+@-ms-keyframes blink {
+  0%   { background: #0a0 }
+  47%  { background: #090 }
+  50%  { background: #000 }
+  97%  { background: #000 }
+  100% { background: #090 }
+}
+ 
+@-o-keyframes blink {
+  0%   { background: #0a0 }
+  47%  { background: #090 }
+  50%  { background: #000 }
+  97%  { background: #000 }
+  100% { background: #090 }
+}
+
+input, textarea { 
+    padding: 9px; 
+    border: solid 1px grey;*/ 
+    /*border: none;
+    border-bottom: dashed 2px rgba(134, 203, 255, 0.75);*/
+    outline: 0; 
+    font: normal 13px/100% Verdana, Tahoma, sans-serif; 
+    width: 100%; 
+    /*background: #FFFFFF; */
+    background: rgba(255, 255, 255, 0.70);
+    } 
+   
+textarea { 
+    /*width: 400px; 
+    max-width: 400px;*/
+    width: 100%; 
+    height: 150px; 
+    line-height: 150%; 
+    margin-top:10px;
+    } 
+   
+input:hover, textarea:hover, 
+input:focus, textarea:focus { 
+    border-color: #C9C9C9; 
+    } 
+   
+.form label { 
+    margin-left: 10px; 
+    color: #999999; 
+    } 
+   
+.submit input { 
+    width: auto; 
+    padding: 9px 15px; 
+    background: #617798; 
+    border: 0; 
+    font-size: 14px; 
+    color: #FFFFFF; 
+    }
+
+.section-page-landing{
+	max-width: 700px;
+	margin-bottom: 200px;
+}
+h1,h2,h3,h4,h5,h6,h7{
+	color: #090;
+	font-size: 2em;
+	font-family: Courier New, Courier, monospace;
+	
+}
+p{
+	color: #090;
+	font-size: 1em;
+	font-weight: 700;
+	font-family: Courier New, Courier, monospace;
+	padding-bottom: 10px;
+}
+.send{
+	background-color:lightblue;
+	margin:0 auto;
+}
+@media screen and (min-width: 1100px) {
+.redline{
+	position: fixed;
+	border-left: red solid 2px;
+	margin-left: 10%;
+	margin-top: -20px;
+	height: 100%;
+}
+.circle{
+    -moz-border-radius: 50px/50px;
+    -webkit-border-radius: 50px 50px;
+    border-radius: 50px/50px;
+    border:solid 1px black;
+    width:25px;
+    height:25px;
+    position:fixed;   
+}
+.circle2{
+    -moz-border-radius: 50px/50px;
+    -webkit-border-radius: 50px 50px;
+    border-radius: 50px/50px;
+    border:solid 1px black;
+    width:25px;
+    height:25px;
+    position:fixed;
+    margin-top: 20%;   
+}
+.circle3{
+    -moz-border-radius: 50px/50px;
+    -webkit-border-radius: 50px 50px;
+    border-radius: 50px/50px;
+    border:solid 1px black;
+    width:25px;
+    height:25px;
+    position:fixed;
+    margin-top: 40%;   
+}
+.circlebox{
+	margin-left:2%;
+	padding-top: 5%;
+}
+}
+@media screen and (max-width: 1100px) {
+.redline{
+	display: none;
+}
+.circle{
+   display: none;  
+}
+.circle2{
+  display: none;  
+}
+.circle3{
+   display: none;   
+}
+.circlebox{
+	display: none;
+}
+}
+
+
+	</style>  
+	<link href='css/progression.min.css' rel='stylesheet' type='text/css'> 
+   <script type="text/javascript" src="js/progression.min.js"></script>
+</head>
+    
+<body>
+	
+	<div class="redline"></div>
+	<div class="circlebox">
+	<div class="circle"></div>
+	<div class="circle2"></div>
+	<div class="circle3"></div>
+	</div>
+	<center>
+<div class="50centwrapper">
+<!-- BEGINNING OF CONTACT FORM -->
+<div class="section-page-landing" id="contact">
+			<div class="inner-section">
+				<div class="contain">
+				<img height="100px"src="images/logo.png">
+				
+				
+<h2>Formal Review Form</h2>
+<p>This form is designed to help us improve your build, and to hopefully hash out any improvements that can be made. Please be as detailed as possible, it will only help us build something better for you!
+
+
+
+<form id="myform" action="reviewForm.php" method="post">
+    
+    
+    
+    <p><label for=""> Company Name</label> 
+    	<input data-progression="" type="text" data-helper="Your Company's Name :) " name="name" value="" placeholder="" />
+    </p>
+       
+    <p>
+	<label for="">We love ideas! Please put any random ones here...</label>
+	<textarea data-progression="" name="ideas" value="" data-helper=""></textarea>
+	</p>
+    
+<!-- form Stuff--->  
+
+<h2>Content</h2>
+
+ 	<p><label for="">Do you feel this site accurately tells what you do and your story? Please explain what we can do to make it better.</label>
+	 	
+	 <textarea data-progression=""  name="content1" value="" data-helper="Most websites have a story that they want to tell the people using the site. We do our best to interpret that story, but ultimately its yours to tell, so help us tell it better" ></textarea>
+    </p>
+
+ <p><label for="">Were there any links that were dead or went to the wrong destination that you noticed?</label>
+	 <textarea data-progression="" type="text" data-helper="Most broken links leave you on the same page or will take you to a 404 page" name="content2" value="" placeholder="" ></textarea>
+    </p>
+
+ <p><label for="">Please list any content errors you found?</label>
+	 <textarea data-progression="" type="text" data-helper="Grammar, Spelling, Syntax... a typical piece of content will change hands between 3-5 people, its very common for mistakes... just note any that you find and we'll fix it." name="content3" value="" placeholder="" ></textarea>
+    </p>
+
+ <p><label for="">Are there any pieces of data that need to be changed</label>
+	 <textarea data-progression="" type="text" data-helper="Prices, Performance data, Product Specifications" name="content4" value="" placeholder="" ></textarea>
+    </p>
+
+ <p><label for="">Are their any major pieces of content that you would like added? please copy and paste them into this field and explain where they should go.</label>
+	 <textarea data-progression="" type="text" data-helper="Any Additions?" name="content5" value="" placeholder="" ></textarea>
+    </p>
+
+ <p><label for="">Are their any images that you would like changed, added, modified? If so please list the URL, and a description:</label>
+	 <textarea data-progression="" type="text" data-helper="Sometimes images may need a little touch up that we may not see" name="content6" value="" placeholder="" ></textarea>
+    </p>
+
+
+
+<!--section 2 design and aesthetics -->
+<h2>Design + Aesthetics</h2>
+
+<p><label for="">Any notes on the Navigation Menu?</label>
+	<textarea data-progression="" type="text" data-helper="The Navigation Menu is the dominant way that people get around your site. double check the links and arrangements" name="design1" value="" placeholder="" ></textarea>
+    </p>
+
+<p><label for="">Any Notes on the Footer?</label>
+	<textarea data-progression="" type="text" data-helper="Think of the footer as the fallback Navigation and info source" name="design2" value="" placeholder="" ></textarea>
+    </p>
+
+<p><label for="">Any notes on Layout?</label>
+	<textarea data-progression="" type="text" data-helper="Navigation/ Content/ footer/ sidebars/ etc" name="design3" value="" placeholder="" ></textarea>
+    </p>
+
+<p><label for="">Does the spacing look good?</label>
+	<textarea data-progression="" type="text" data-helper="Spacing is the context of each element to all the other elements" name="design4" value="" placeholder="" ></textarea>
+    </p>
+
+<p><label for="">Any notes on typography? </label>
+	<textarea data-progression="" type="text" data-helper="Size, Fonts, line height, Spacing, Headings versus content, " name="design5" value="" placeholder="" ></textarea>
+    </p>
+
+<p><label for="">Any modifications to the Color palate?</label>
+	<textarea data-progression="" type="text" data-helper="Notes on Colors and how they work together" name="design6" value="" placeholder="" ></textarea>
+    </p>
+
+<p><label for="">Please make any notes about the Images/ photography that you would like us to consider...</label>
+	<textarea data-progression="" type="text" data-helper="Notes about the Pictures" name="design7" value="" placeholder="" ></textarea>
+    </p>
+
+
+
+<!-- UX area --->
+<h2>EASE of Use/ User Experience</h2>
+
+ <p><label for="">Describe any difficulty you have getting around the site… is there any information that you wish was easier to get?</label>
+	 <textarea data-progression="" type="text" data-helper="Think about how the end user will use the site" name="ux1" value="" placeholder="" ></textarea>
+    </p>
+
+ <p><label for="">Do you feel the contact info is easy to get?</label>
+	 <textarea data-progression="" type="text" data-helper="Help users through forms by prividing helpful hinters" name="ux2" value="" placeholder="" ></textarea>
+    </p>
+
+ <p><label for="">Do you feel that the site is accessible to all the users that will be using your site? Are there any updates we should make to make the site more accessible? </label>
+	 <textarea data-progression="" type="text" data-helper="Think about the random scenarios that will pop up." name="ux3" value="" placeholder="" ></textarea>
+    </p>
+
+<h2>Other</h2>
+
+ <p><label for="">What, at this point would, keep this site from accomplishing its goal (generate more revenue, improve company image, etc)</label>
+	 <textarea data-progression="" type="text" data-helper="The Big Question of all Big Questions" name="other1" value="" placeholder="" ></textarea>
+    </p>
+
+ <p><label for="">Leave this blank it's for the non-humans</label>
+	 <textarea data-progression="" type="text" data-helper="" name="other2" value="" placeholder="" ></textarea>
+    </p>
+
+
+<!-- 							-->
+<!--end meaning where you submit-->
+<!--							-->
+
+
+
+    <input class="send" type="submit" value="Send"/>
+  </form>
+				
+				
+				
+				
+				
+		</div>
+		</div>
+		</div>
+		</div><!-- 50cent -->
+		<!--end contact form-->
+		</center>
+		
+
+		<script>
+		$(document).ready(function ($) {		
+		    $("#myform").progression({
+        tooltipWidth: '200',
+        tooltipPosition: 'right',
+        tooltipOffset: '50',
+        showProgressBar: true,
+        showHelper: true,
+        tooltipFontSize: '14',
+        tooltipFontColor: 'fff',
+        progressBarBackground: 'fff',
+        progressBarColor: '6EA5E1',
+        tooltipBackgroundColor: 'a2cbfa',
+        tooltipPadding: '10',
+        tooltipAnimate: true
+    });   	
+		});
+			</script>
+		</body>
+		</html>
